@@ -1,0 +1,23 @@
+{
+    "name":"reservemygolf",
+    "openBrowser":true,
+    "startTimeout":240,
+    "stopsocket":50123,
+    "console":true,
+    "profile":"dev",
+    "dockEnable":true,
+    "trayEnable":true,
+    "jvm":{
+        "heapSize":512,
+        "minHeapSize":256
+    },
+    "web":{
+        "host":"127.0.0.1",
+        "webroot":"src/web",
+        "directoryBrowsing":false,
+        "accessLogEnable":true,
+        "maxRequests":30,
+        "gzipEnable":true,
+        "welcomeFiles":"index.cfm, main.cfm, go.cfm"
+    }
+}
