@@ -4,14 +4,22 @@
     "startTimeout":240,
     "stopsocket":50123,
     "console":true,
-    "profile":"dev",
+    "profile":"development",
     "dockEnable":true,
     "trayEnable":true,
     "jvm":{
         "heapSize":512,
         "minHeapSize":256
     },
+    "openBrowserURL":"http://localhost:8080/",
     "web":{
+        "http":{
+            "enable":"true",
+            "port":"8080"
+        },
+        "rewrites":{
+            "enable":"true"
+        },
         "host":"127.0.0.1",
         "webroot":"src/web",
         "directoryBrowsing":false,

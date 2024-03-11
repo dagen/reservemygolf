@@ -1,5 +1,5 @@
 component extends="framework.one" {
-	
+
 	/*
 		This is provided for illustration only - YOU SHOULD NOT USE THIS IN
 		A REAL PROGRAM! ONLY SPECIFY THE DEFAULTS YOU NEED TO CHANGE!
@@ -64,7 +64,12 @@ component extends="framework.one" {
         routesCaseSensitive = true
 	};
 	*/
-	
+
+  variables.framework = {
+    generateSES = true,
+    sesOmitIndex = true
+  }
+
 	function setupRequest() {
 		// use setupRequest to do initialization per request
 		request.context.startTime = getTickCount();
